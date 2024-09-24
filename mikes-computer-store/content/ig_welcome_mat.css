@@ -1,0 +1,265 @@
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PT Sans'), local('PTSans-Regular'),
+         url(https://themes.googleusercontent.com/static/fonts/ptsans/v5/7YGmE4Ls5b94ct65u07hVQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('PT Sans Bold'), local('PTSans-Bold'),
+         url(https://themes.googleusercontent.com/static/fonts/ptsans/v5/0XxGQsSc1g4rdRdjJKZrNL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
+#igFlag {
+    display: block;
+    padding: 5px;
+    margin: 0 10px 5px;
+    border-radius: 7px;
+}
+
+#igFlag:before {
+    content: 'Select Country:';
+    margin-right: 5px;
+}
+
+#igFlag img {
+    max-width: 25px;
+    margin-bottom: -3px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#igSplashElement {
+    position: relative;
+    width: 500px;
+    -webkit-box-shadow: 0 0 60px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, .5);
+    color: #666;
+}
+
+.closeButton {
+    position: absolute;
+    top: -24px;
+    right: -27px;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.igModalHeader {
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    color: #999;
+    overflow: auto;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.logoWrapper {
+    display: none;
+    float: left;
+    width: 180px;
+}
+
+.messageWrapper {}
+
+.modalLogo {
+    float: left;
+    margin: 10px;
+    width: 170px;
+    margin-top: 50px;
+}
+
+.igModalHeader img.headerFlag {
+    max-width: 50px;
+    margin-top: -15px;
+}
+
+.headerZero {
+    margin-bottom: 8px;
+}
+
+.headerOne {
+    font-size: 30px;
+    padding-left: .5em;
+    color: #f7f7f7;
+    text-transform: uppercase;
+}
+
+.headerTwo {
+    color: #999;
+    margin-top: 7px;
+    font-size: 12px;
+}
+
+.igModalBody {
+    text-align: center;
+    width: 100%;
+    min-height: 320px;
+}
+
+.countryDropDownWrapper {
+    width: 100%;
+    min-height: 25px;
+    -webkit-border-radius: 10px;
+    margin: 0 auto;
+    padding: 0;
+    cursor: pointer;
+}
+
+#countrySelect {
+    position: relative;
+    height: 35px;
+    padding: 7px 10px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+    color: #333!important;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+ul.featureList {
+    padding: 20px;
+    margin: 0;
+    color: #e8e8e8;
+    border-radius: 7px;
+    background-color: #333;
+}
+
+ul.featureList li {
+    list-style-type: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+ul.featureList li strong {
+    color: #fff;
+}
+
+ul.featureList li img {
+    padding-top: 5px;
+    max-width: 80px;
+    margin-bottom: -15px;
+}
+
+.igWelcomeCTAButton {
+    background: #000;
+    width: 100%;
+    height: 100%;
+}
+
+.igWelcomeCTAButton button {
+    margin: 20px auto;
+    font-size: 20px;
+    border: none;
+}
+
+.button-v2 {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    line-height: 1.4em;
+    text-align: center;
+    text-decoration: none;
+    font: 1em;
+    padding: .2em .9em .3em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+    border-radius: .9em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.button-v2:hover {
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}
+
+.button-v2:active {
+    position: relative;
+    top: 1px;
+}
+
+.button-v2.blue {
+    color: #f2f2f2;
+    background: #308fbf;
+    border-top: solid 1px #3db6f2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#308fbf), to(#103040));
+    background: -moz-linear-gradient(top, #308fbf, #103040);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#308fbf', endColorstr='#103040');
+}
+
+.button-v2.blue:hover {
+    background: #1a3440;
+    border-top: solid 1px #3db6f2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#308fbf), to(#206080));
+    background: -moz-linear-gradient(top, #36a3d9, #308fbf);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#36a3d9', endColorstr='#308fbf');
+}
+
+.button-v2.blue:active {
+    color: #607580;
+    background: #103040;
+    border-top: solid 1px #103040;
+}
+
+.igWelcomeCTAButton button.close {
+    padding: .2em .9em .3em;
+    float: none;
+    opacity: 1;
+}
+
+.igWelcomeCTAButton button.close:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+    #igSplashElement {
+        width: 400px;
+        margin-left: -200px!important;
+    }
+
+    .logoWrapper {
+        float: none;
+        width: auto;
+    }
+
+    .modalLogo {
+        float: none;
+        margin: 10px auto;
+    }
+
+    .messageWrapper {
+        clear: both;
+    }
+}
+
+#igSplashElement {
+    background-color: #000;
+    border: 1em solid #353638;
+    z-index: 102;
+    padding: 1em 1.5em;
+    box-shadow: 1em 1em 1em #000;
+    display: inline-block;
+    border-radius: 7px;
+}
+
+.button-v2.blue.close {
+    width: auto;
+    height: auto;
+}
+
+#igFlag {
+    text-align: center!important;
+}
